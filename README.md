@@ -107,47 +107,6 @@ docker compose down
 data/state.json
 ```
 
-Пример:
-
-```json
-{
-  "servers": [
-    {
-      "id": "srv-france",
-      "name": "Франция",
-      "ip": "45.95.173.144",
-      "baseUrl": "https://welcome.aiww.ru",
-      "description": "Основной хост",
-      "expanded": true,
-      "order": 1,
-      "tags": ["prod", "eu"]
-    }
-  ],
-  "services": [
-    {
-      "id": "svc-france-n8n",
-      "serverId": "srv-france",
-      "name": "n8n",
-      "url": "https://n8n.aiww.ru",
-      "description": "Workflow Automation",
-      "category": "Automation",
-      "iconUrl": "",
-      "healthUrl": "https://n8n.aiww.ru",
-      "checkMethod": "http",
-      "pinned": true,
-      "order": 1,
-      "credentials": [],
-      "links": [],
-      "notes": ""
-    }
-  ],
-  "meta": {
-    "version": 2,
-    "updatedAt": "2026-03-08T00:00:00.000Z"
-  }
-}
-```
-
 ## 12. Важно
 
 - credentials хранятся в `state.json` как обычные данные. Это **не vault**.
